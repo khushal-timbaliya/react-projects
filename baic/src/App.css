@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+table{
+    /* border: 2px solid black; */
+    width: 98%;
+    height: 200px;
+    /* background-color: aqua; */
+}
+
+table td,
+th{
+    border: 2px solid black;
+}
