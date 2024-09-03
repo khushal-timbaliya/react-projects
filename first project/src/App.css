@@ -1,18 +1,18 @@
-/* Reset some default styles */
+/* Reset some default styles
 body, html, ul, li, p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* General Styles */
+General Styles
 body {
   font-family: 'Arial', sans-serif;
   color: #333;
   background: #f7f7f7;
 }
 
-/* Navbar Styles */
+Navbar Styles
 .navbar {
   background-color: #333;
   padding: 15px;
@@ -39,7 +39,7 @@ body {
   color: #ff6347;
 }
 
-/* Main Section Styles */
+Main Section Styles
 .main-section {
   display: flex;
   justify-content: space-between;
@@ -89,7 +89,7 @@ body {
   border-radius: 8px;
 }
 
-/* Footer Styles */
+Footer Styles
 .footer {
   background-color: #333;
   padding: 20px 0;
@@ -111,4 +111,4 @@ body {
 
 .social-icons a:hover {
   color: #ff6347;
-}
+} */

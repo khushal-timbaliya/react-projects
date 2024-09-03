@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
     return (
         <div>
-            <footer className="footer">
+            {/* <footer className="footer">
                 <div className="footer-content">
                     <div className="social-icons">
                         <a href="https://facebook.com"><i className="fab fa-facebook-f"></i></a>
@@ -13,7 +13,7 @@ export default function Footer() {
                     </div>
                     <p>© 2024 My Awesome Website. All Rights Reserved.</p>
                 </div>
-            </footer>
+            </footer> */}
         </div>
     )
 }
