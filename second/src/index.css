@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+    backdrop-filter: blur(10px);
+    border: 2px solid WHITE;
+}

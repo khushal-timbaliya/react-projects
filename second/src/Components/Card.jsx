@@ -8,61 +8,55 @@ export default function Card() {
         setCount(count + Number(inputNumber)); // Convert input value to number
     };
 
-    const reset = () =>{
+    const reset = () => {
         setCount(0)
+        setInputNumber(0)
     };
 
-    const decrease = () =>{
+    const decrease = () => {
         setCount(count - Number(inputNumber))
     };
 
-    const input = (e) =>{
+    const input = (e) => {
         setInputNumber(e.target.value)
     };
 
     return (
         <div>
-            <div className="container w-[50%] h-[60vh] mt-[20vh] ms-[25%] bg-[#87CEEB] rounded-[30px] flex flex-col justify-center items-center">
+            <div className="container w-[50%] h-[60vh] mt-[20vh] ms-[25%] bg-transparent rounded-[30px] flex flex-col justify-center items-center">
                 <h1 className='text-3xl text-white font-bold'>React Counter</h1>
+
                 <div className="h-[100px] w-[100px] rounded-[10px] flex justify-center items-center text-5xl mt-3 border-4 border-white">
-                        <p className='text-black'>{count}</p>
-                        </div>    
-                    <div className="p-5 flex flex-col justify-between">
-                        <div className="flex flex-col">
-                            <p className='text-black'>Enter number that you want to increase or decrease:</p>
-                            <input
-                                type="number"
-                                className="inputNumber mt-2 border border-none ps-2 h-[45px] w-[400px] rounded-[5px]"
-                                value={inputNumber}
-                                onChange={input}
-                                />
+                    <p className='text-black'>{count}</p>
+                </div>
 
-                            <button
-                                className="reset text-[20px] border-4 border-white h-[45px] w-[400px] mt-5 rounded-[5px] flex justify-center items-center"
-                                onClick={reset} 
-                            >
-                                Reset
-                            </button>
-                        </div>
-                        <div>
-                            <button
-                                className="increase text-[20px] border-4 border-white h-[70px] w-[190px] mt-5 rounded-[5px]"
-                                onClick={increase}
-                            >
-                                <p>{inputNumber}</p>
-                                Add
-                            </button>
-                            <button
-                                className="decrease text-[20px] border-4 border-white h-[70px] w-[190px] ms-[25px] mt-5 rounded-[5px]"
-                                onClick={decrease} 
-                            >
-                                <p>{inputNumber}</p>
+                <div className="p-5 flex flex-col justify-between">
+                    <div className="flex flex-col">
+                        <p className='text-slate-300'>Enter number that you want to increase or decrease:</p>
+                        <input
+                            type="number" className="inputNumber mt-2 border border-none ps-2 h-[45px] w-[400px] rounded-[5px]"
+                            value={inputNumber} 
+                            onChange={input} 
+                        />
 
-                                Subtract
-                            </button>
-                        </div>
+                        <button className="text-slate-300 reset text-[20px] border-4 border-white h-[45px] w-[400px] mt-5 rounded-[5px] flex justify-center items-center"
+                            onClick={reset}>Reset
+                        </button>
                     </div>
-                
+                    <div>
+                        <button className="text-slate-300 increase text-[20px] border-4 border-white h-[70px] w-[190px] mt-5 rounded-[5px]"
+                            onClick={increase}>
+                            <p>{inputNumber}</p>
+                            Add
+                        </button>
+                        <button className="text-slate-300 decrease text-[20px] border-4 border-white h-[70px] w-[190px] ms-[25px] mt-5 rounded-[5px]"
+                            onClick={decrease}>
+                            <p>{inputNumber}</p>
+                            Subtract
+                        </button>
+                    </div>
+                </div>
+
             </div>
         </div>
     );
