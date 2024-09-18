@@ -4,7 +4,6 @@ export default function Controll() {
     const [name, setName] = useState('');
     const handlechange = (e) => {
         console.log(e.target.value);
-
     }
 
     return (
