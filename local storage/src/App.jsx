@@ -4,14 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Crud from './Components/crud'
 import Local from './Components/local'
+import Delete from './Components/delete'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Crud/>
+      {/* <Crud/> */}
       {/* <Local/> */}
+      <Delete/>
     </>
   )
 }
