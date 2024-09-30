@@ -13,8 +13,6 @@ export default function Delete() {
         setRecord(data)
     }, [])
 
-
-
     const handelchange = () => {
         let user = { id: Date.now(), name, subject, city }
         let oldRecord = JSON.parse(localStorage.getItem("student")) || []
