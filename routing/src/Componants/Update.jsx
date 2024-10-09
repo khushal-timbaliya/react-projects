@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Update({ data, setData }) {
   const navigate = useNavigate();
@@ -9,7 +9,6 @@ export default function Update({ data, setData }) {
   const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {
-    // When the ID changes, find the corresponding item
     const foundItem = data.find(item => item.id == id);
     if (foundItem) {
       setName(foundItem.name);
