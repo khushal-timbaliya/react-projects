@@ -1,0 +1,75 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  padding: 10%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://img.freepik.com/free-photo/flowers_23-2148134334.jpg?t=st=1728643172~exp=1728646772~hmac=684efd674f21d93f9f96e27070f4dc7f16ff1914154fa61a582e578179b37826&w=1060);
+}
+.main{
+  width: 50%;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://img.freepik.com/free-photo/top-view-flowers-with-copy-space_23-2148172596.jpg?t=st=1728900314~exp=1728903914~hmac=368bec8caca0bbad4b2e58ee649433777d3fdea71c3ff5930e909163735ddbb5&w=1380);
+}
+input{
+  margin: 2%;
+  height: 45px;
+  width: 350px;
+  border: none;
+  border-bottom: 5px solid #0b0be640 ;
+  background-color:transparent;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://img.freepik.com/free-vector/watercolor-blue-abstract-texture-background_65186-2937.jpg?t=st=1728900431~exp=1728904031~hmac=00525a72f23d0744c5f48d9a80e69198352e2926a2d15de654bb55e13e491f31&w=996);
+  box-shadow: #b506e640 0px 6px 12px -2px, rgba(232, 6, 217, 0.3) 0px 3px 7px -3px;
+}
+
+::placeholder{
+  padding: 3%;
+  text-transform: capitalize;
+  color: purple;
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button{
+  height: 45px;
+  width: 200px;
+  margin: 1%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://img.freepik.com/free-vector/sky-pink-flowers-realistic-blurred-spring-background_52683-55069.jpg?t=st=1728643594~exp=1728647194~hmac=b6902851733c557d1ba579c018fb0174717d9ad271a45b14fe0a23aacb7eadc6&w=996);
+  font-size: 18px;
+  color: rgb(49, 10, 243);
+  border: none;
+  font-weight: bolder;
+}
+ul{
+  text-align: center;
+}
+li{
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  padding: 1%;
+  color: rgb(241, 15, 192);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 19px;
+}
+h1{
+  font-size: 50px;
+  background: url(https://img.freepik.com/free-vector/floral-background-artwork_23-2148280403.jpg?t=st=1728644045~exp=1728647645~hmac=ce1a789f4d6b3e31e512c96661fc03b800823fef34316261cfdf4efcaf1f1974&w=996) 50% 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transform: scale(1.2);
+  padding: 5%;
+}
