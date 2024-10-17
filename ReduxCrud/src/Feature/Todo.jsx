@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Action } from "@remix-run/router";
 
 
 export const todo = createSlice({
