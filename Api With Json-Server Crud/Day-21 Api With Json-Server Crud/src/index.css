@@ -1,0 +1,126 @@
+/* Background styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f3ec78, #af4261);
+  color: #333;
+  margin: 0;
+  padding: 20px 0; /* Added padding for the top and bottom of the body */
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 40px 20px; /* Increased padding for top and bottom of the container */
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #af4261;
+  margin-bottom: 30px; /* Increased bottom margin */
+}
+
+/* Input fields styling */
+input[type="text"], input[type="file"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border-color: #af4261;
+  box-shadow: 0 4px 8px rgba(175, 66, 97, 0.1);
+  outline: none;
+}
+
+input[type="file"] {
+  border: none;
+}
+
+/* Button styling */
+button {
+  background-color: #af4261;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin: 20px 0; /* Increased margin between buttons */
+}
+
+button:hover {
+  background-color: #f3ec78;
+  color: #af4261;
+  transform: translateY(-3px);
+}
+
+/* Data list */
+.data-list {
+  margin-top: 30px; /* Increased margin at the top of the list */
+}
+
+/* Data item styling */
+.data-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px; /* Added padding to prevent content cutting inside the data item */
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.data-item:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.data-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 15px;
+}
+
+/* Item details */
+.item-details p {
+  margin: 5px 0;
+}
+
+/* Item actions */
+.item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.item-actions button {
+  background-color: #f3ec78;
+  color: #af4261;
+}
+
+.item-actions button:hover {
+  background-color: #af4261;
+  color: white;
+}
+.item-details{
+  width: 400px;
+}

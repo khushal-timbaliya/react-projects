@@ -10,7 +10,7 @@ export default function TaskManager() {
     const [editIndex, setEditIndex] = useState("");
 
     const count = useSelector((state) => state.taskKey);
-    const tasks = count?.task || [];
+    const tasks = count?.task || [];  // Ensure tasks array is defined
     const dispatch = useDispatch();
 
     const handlePriorityChange = (e) => {
@@ -19,6 +19,7 @@ export default function TaskManager() {
 
     const addRecord = () => {
         if (editIndex) {
+            // Use the correct fields for update
             dispatch(updateTask({ id: editIndex, task, taskField, taskManager, priority }));
             resetForm();
         } else {
@@ -47,7 +48,7 @@ export default function TaskManager() {
         const editData = tasks.find((item) => item.id === id);
         if (editData) {
             setTaskName(editData.task);
-            setTaskField(editData.taskDes);
+            setTaskField(editData.taskField);  // Use consistent field name
             setTaskManager(editData.taskManager);
             setPriority(editData.priority);
             setEditIndex(id);
@@ -57,6 +58,7 @@ export default function TaskManager() {
     return (
         <div className="task-manager">
             <h1 className="task-title">Task Manager</h1>
+
             <input
                 type="text"
                 className="task-input"
@@ -65,6 +67,7 @@ export default function TaskManager() {
                 value={task}
             />
             <br /><br />
+
             <input
                 type="text"
                 className="task-input"
@@ -73,6 +76,7 @@ export default function TaskManager() {
                 value={taskField}
             />
             <br /><br />
+
             <input
                 type="text"
                 className="task-input"
@@ -87,20 +91,24 @@ export default function TaskManager() {
             <div className="priority-selection">
                 <input type="radio" name="priority" value="High" onChange={handlePriorityChange} checked={priority === "High"} />
                 <label className="priority-option">High</label>
+
                 <input type="radio" name="priority" value="Medium" onChange={handlePriorityChange} checked={priority === "Medium"} />
                 <label className="priority-option">Medium</label>
+
                 <input type="radio" name="priority" value="Low" onChange={handlePriorityChange} checked={priority === "Low"} />
                 <label className="priority-option">Low</label>
             </div>
             <br />
 
-            <button className="submit-button" onClick={addRecord}>{editIndex ? "Update" : "Add"}</button>
+            <button className="submit-button" onClick={addRecord}>
+                {editIndex ? "Update" : "Add"}
+            </button>
 
             {tasks.map((e) => (
                 <div key={e.id} className="task-item">
                     <img className="task-image" src={e.image} alt="" />
                     <p>Task: {e.task}</p>
-                    <p>Task Description: {e.taskDes}</p>
+                    <p>Task Description: {e.taskField}</p>
                     <p>Task Manager Name: {e.taskManager}</p>
                     <p>Task Priority: {e.priority}</p>
 

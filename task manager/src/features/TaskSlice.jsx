@@ -8,21 +8,23 @@ export const task = createSlice({
         addTask: (state, action) => {
             state.task.push(action.payload)
         },
-        deleteTask : (state, action)=>{
-            const data = state.task.filter((item)=> item.id != action.payload)
+        deleteTask: (state, action) => {
+            const data = state.task.filter((item) => item.id != action.payload)
             state.task = data
         },
-        updateTask : (state, action)=>{
-            if(e.id == action.payload.id){
-                e.task == action.payload.task
-                e.taskDes == action.payload.taskDes
-                e.taskManager == action.payload.taskManager
-                e.priority == action.payload.priority
-                e.image == action.payload.image
+        updateTask: (state, action) => {
+            const { id, task, taskField, taskManager, priority } = action.payload;
+            const existingTask = state.task.find((t) => t.id === id);
+            if (existingTask) {
+                existingTask.task = task;
+                existingTask.taskField = taskField;
+                existingTask.taskManager = taskManager;
+                existingTask.priority = priority;
             }
-        },
+        }
+        ,
     }
 })
 
-export const { addTask ,deleteTask, updateTask } = task.actions
+export const { addTask, deleteTask, updateTask } = task.actions
 export default task.reducer
