@@ -1,0 +1,94 @@
+/* General Page Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styling */
+.incomeAmount, .expenseList {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  max-width: 90%;
+}
+
+/* Heading Styling */
+h1 {
+  color: #2d3436;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Input Fields Styling */
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #dfe6e9;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0984e3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #74b9ff;
+}
+
+/* Budget Amount Styling */
+p {
+  font-size: 1.2rem;
+  color: #2d3436;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+/* Expense List Styling */
+.expenseList {
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expenseList div {
+  background-color: #dfe6e9;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.expenseList div p {
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.expenseList div p:first-child {
+  font-weight: bold;
+}
