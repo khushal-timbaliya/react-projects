@@ -13,9 +13,6 @@ export default function App() {
           <Route path="/user" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
-
-      {/* <Login />
-      <Dashboard /> */}
     </div>
   )
 }

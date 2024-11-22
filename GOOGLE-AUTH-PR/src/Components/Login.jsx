@@ -1,7 +1,6 @@
-
-import { signInWithPopup } from "firebase/auth";
 import React from "react";
-import { auth, owner } from "../../firebaseConfig";
+import { signInWithPopup } from "firebase/auth";
+import { auth, owner } from "../../FirebaseConfig";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
@@ -22,10 +21,11 @@ export default function Login() {
 
     return (
         <div className="login-container">
-            <h1>Login</h1>
+            <h1 className="a1">Login</h1>
             <input type="text" placeholder="ENTER THE EMAIL" />
             <input type="password" placeholder="ENTER THE PASSWORD" />
-            <button onClick={handellogin}>Sign in with Google</button>
+            <p>QR</p>
+            <button onClick={handellogin}>continue with Google</button>
         </div>
     );
 }
