@@ -24,7 +24,7 @@ export default function Login() {
             <h1 className="a1">Login</h1>
             <input type="text" placeholder="ENTER THE EMAIL" />
             <input type="password" placeholder="ENTER THE PASSWORD" />
-            <p>QR</p>
+            <p>OR</p>
             <button onClick={handellogin}>continue with Google</button>
         </div>
     );
